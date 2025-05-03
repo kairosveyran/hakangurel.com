@@ -46,12 +46,25 @@
       font-size: 0.9rem;
       color: #666;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Hakan Gürel</h1>
-    <p>Gayrimenkul Danışmanı & Kentsel Dönüşüm Uzmanı</p>
+    <p>Gayrimenkul Danışmanı & Yapay Zeka Araştırmacısı</p>
     <nav>
       <a href="#hakkimda">Hakkımda</a>
       <a href="#portfoy">Portföy</a>
@@ -88,8 +101,25 @@
 
     <section id="iletisim">
       <h2>İletişim</h2>
-      <p>E-posta: hakangurel@live.com</p>
-      <p>Telefon: +90 532 170 16 86</p>
+      <p>E-posta: <a href="mailto:hakangurel@live.com">hakangurel@live.com</a></p>
+      <p>Telefon: <a href="tel:+905321701686">+90 532 170 16 86</a></p>
+      <p><a href="https://wa.me/905321701686" target="_blank">WhatsApp üzerinden mesaj gönder</a></p>
+      <p>Adres: Arapsuyu Mah. Atatürk Bulvarı No: 63/A Remax Aqua Konyaaltı / Antalya</p>
+
+      <iframe src="https://www.google.com/maps?q=Remax%20Aqua%20Konyaalt%C4%B1%20Antalya&output=embed" width="100%" height="300" style="border:0; border-radius:12px; margin-top:1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <form action="mailto:hakangurel@live.com" method="post" enctype="text/plain">
+        <label for="name">Adınız:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Mesajınız:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Gönder">
+      </form>
     </section>
   </div>
   <footer>
@@ -97,8 +127,3 @@
   </footer>
 </body>
 </html>
-<a href="https://wa.me/905321701686" target="_blank">
-  <img src="assets/images/whatsapp-icon.png" alt="WhatsApp ile iletişime geçin" style="width:50px;height:50px;">
-</a>
-
-
