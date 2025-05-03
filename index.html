@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hakan Gürel - Gayrimenkul Danışmanı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f4f4;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
-      text-align: center;
     }
     header {
-      background-color: #2c3e50;
+      background-color: #003366;
       color: white;
-      padding: 50px 20px;
+      padding: 1rem 2rem;
+      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    main {
-      padding: 40px 20px;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #3498db;
+    nav a {
+      margin: 0 1rem;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s;
+      font-weight: 600;
     }
-    .buttons a:hover {
-      background: #2980b9;
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .property {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .property img {
+      max-width: 100%;
+      border-radius: 8px;
     }
     footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #999;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Hakan Gürel</h1>
-    <p>Gayrimenkul Danışmanı • Yapay Zeka Araştırmacısı</p>
+    <p>Gayrimenkul Danışmanı & Yapay Zeka Araştırmacısı</p>
+    <nav>
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#portfoy">Portföy</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
   </header>
+  <div class="container">
+    <section id="hakkimda">
+      <h2>Hakkımda</h2>
+      <p>Ben Hakan Gürel. Kentsel dönüşüm, yatırım arsaları ve konut projeleri üzerine uzmanlaşmış bir gayrimenkul danışmanıyım. Özellikle Antalya’nın Kepez, Muratpaşa ve Konyaaltı ilçelerinde aktif olarak hizmet veriyorum. Kentsel dönüşüm süreçlerinde müşterilerime doğru yönlendirme ve maksimum kazanç sağlayacak çözümler üretmekteyim. Aynı zamanda yapay zeka alanında araştırmalar yapıyor ve bu teknolojileri gayrimenkul alanında etkin şekilde kullanıyorum.</p>
+    </section>
 
-  <main>
-    <h2>Merhaba!</h2>
-    <p>Gayrimenkul sektöründe uzmanlaşmış bir danışman ve yapay zeka tutkunu olarak, size en iyi çözümleri sunmak için buradayım.</p>
-    
-    <div class="buttons">
-      <a href="mailto:iletisim@hakangurel.com">E-posta Gönder</a>
-      <a href="https://www.linkedin.com/in/hakangurel" target="_blank">LinkedIn Profilim</a>
-    </div>
-  </main>
+    <section id="portfoy">
+      <h2>Satılık Mülkler</h2>
+      <div class="property">
+        <img src="assets/images/arsa-kepez.jpg" alt="Arsa Kepez">
+        <h3>Antalya Kepez – Yatırımlık Arsa</h3>
+        <p>Fiyat: 950.000 TL</p>
+        <a href="mailto:hakan@hakangurel.com">Detaylı bilgi al</a>
+      </div>
+      <div class="property">
+        <img src="assets/images/konut-muratpasa.jpg" alt="Konut Muratpaşa">
+        <h3>Antalya Muratpaşa – 2+1 Daire</h3>
+        <p>Fiyat: 2.750.000 TL</p>
+        <a href="mailto:hakan@hakangurel.com">Detaylı bilgi al</a>
+      </div>
+      <div class="property">
+        <img src="assets/images/konut-konyaalti.jpg" alt="Konut Konyaaltı">
+        <h3>Antalya Konyaaltı – Site İçinde 3+1 Daire</h3>
+        <p>Fiyat: 3.600.000 TL</p>
+        <a href="mailto:hakan@hakangurel.com">Detaylı bilgi al</a>
+      </div>
+    </section>
 
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <p>E-posta: hakan@hakangurel.com</p>
+      <p>Telefon: +90 5XX XXX XX XX</p>
+    </section>
+  </div>
   <footer>
     &copy; 2025 Hakan Gürel. Tüm hakları saklıdır.
   </footer>
-
 </body>
 </html>
+
