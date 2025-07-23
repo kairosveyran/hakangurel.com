@@ -1,128 +1,76 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakan Gürel - Gayrimenkul Danışmanı</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .property {
-      background: white;
-      border-radius: 12px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .property img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    form input[type="submit"] {
-      background-color: #003366;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hakan Gürel</h1>
-    <p>Gayrimenkul Danışmanı & Yapay Zeka Araştırmacısı</p>
-    <nav>
-      <a href="#hakkimda">Hakkımda</a>
-      <a href="#portfoy">Portföy</a>
-      <a href="#iletisim">İletişim</a>
-    </nav>
-  </header>
-  <div class="container">
-    <section id="hakkimda">
-      <h2>Hakkımda</h2>
-      <p>Ben Hakan Gürel. Kentsel dönüşüm, yatırım arsaları ve konut projeleri üzerine uzmanlaşmış bir gayrimenkul danışmanıyım. Özellikle Antalya’nın Kepez, Muratpaşa ve Konyaaltı ilçelerinde aktif olarak hizmet veriyorum. Kentsel dönüşüm süreçlerinde müşterilerime doğru yönlendirme ve maksimum kazanç sağlayacak çözümler üretmekteyim. Aynı zamanda yapay zeka alanında araştırmalar yapıyor ve bu teknolojileri gayrimenkul alanında etkin şekilde kullanıyorum.</p>
-    </section>
 
-    <section id="portfoy">
-      <h2>Satılık Mülkler</h2>
-      <div class="property">
-        <img src="assets/images/arsa-kepez.jpg" alt="Arsa Kepez">
-        <h3>Antalya Kepez – Yatırımlık Arsa</h3>
-        <p>Fiyat: 950.000 TL</p>
-        <a href="mailto:hakangurel@live.com">Detaylı bilgi al</a>
-      </div>
-      <div class="property">
-        <img src="assets/images/konut-muratpasa.jpg" alt="Konut Muratpaşa">
-        <h3>Antalya Muratpaşa – 2+1 Daire</h3>
-        <p>Fiyat: 2.750.000 TL</p>
-        <a href="mailto:hakangurel@live.com">Detaylı bilgi al</a>
-      </div>
-      <div class="property">
-        <img src="assets/images/konut-konyaalti.jpg" alt="Konut Konyaaltı">
-        <h3>Antalya Konyaaltı – Site İçinde 3+1 Daire</h3>
-        <p>Fiyat: 3.600.000 TL</p>
-        <a href="mailto:hakangurel@live.com">Detaylı bilgi al</a>
-      </div>
-    </section>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hakan Gürel | Gayrimenkul Danışmanı</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="icon" href="assets/images/logo.png" type="image/png">
+    </head>
+    <body>
+        <header id="header">
+            <img src="assets/images/logo.png" alt="Hakan Gürel Logo" style="height: 40px; float: left; margin-right: 10px;">
+            <h1><a href="#">Hakan Gürel</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Hakkımda</a></li>
+                    <li><a href="#services">Uzmanlıklarım</a></li>
+                    <li><a href="#portfolio">Sattıklarım</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="iletisim">
-      <h2>İletişim</h2>
-      <p>E-posta: <a href="mailto:hakangurel@live.com">hakangurel@live.com</a></p>
-      <p>Telefon: <a href="tel:+905321701686">+90 532 170 16 86</a></p>
-      <p>WhatsApp: <a href="https://wa.me/905321701686" target="_blank">Mesaj Gönder</a></p>
-      <p>Adres: Arapsuyu Mah. Atatürk Bulvarı No: 63/A Remax Aqua Konyaaltı / Antalya</p>
-      <iframe src="https://www.google.com/maps?q=Arapsuyu+Mah.+Atat%C3%BCrk+Bulvar%C4%B1+No:+63/A+Remax+Aqua+Konyaalt%C4%B1+Antalya&output=embed" width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+        <section id="hero">
+            <h2>Antalya'nın Güçlü Emlak Danışmanı</h2>
+            <p>2015'ten bu yana gayrimenkul sektöründe güvenin adı<br>
+            Mülkünüzü satışa götüren güçlü el: <strong>Hakan Gürel</strong></p>
+        </section>
 
-      <form action="mailto:hakangurel@live.com" method="post" enctype="text/plain">
-        <label for="name">Adınız:</label><br>
-        <input type="text" id="name" name="name" required><br>
+        <section id="about">
+            <h2>Hakkımda</h2>
+            <p>Ben Hakan Gürel, Antalya merkezli 2015 yılında temelini attığım emlak sektöründe lisanslı emlak danışmanıyım. 
+            Arsa yatırımı, kentsel dönüşüm ve ticari mülk alım-satımında uzmanlaştım. Yatırımınıza değer katmak için buradayım.</p>
+        </section>
 
-        <label for="email">E-posta:</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <section id="services">
+            <h2>Uzmanlıklarım</h2>
+            <ul>
+                <li>Konut</li>
+                <li>Lüks Villa</li>
+                <li>Arsa</li>
+                <li>Kentsel Dönüşüm</li>
+                <li>Ticari Mülk</li>
+            </ul>
+        </section>
 
-        <label for="message">Mesajınız:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <section id="portfolio">
+            <h2>Sattıklarım</h2>
+            <ul>
+                <li>Kadriye’de 521 m² lüks villa arsası</li>
+                <li>Kepez’de 4+2 dubleks daire</li>
+                <li>Kepez Çankaya’da Nefes Bahçe Sitesi'nde kiralık daire</li>
+            </ul>
+        </section>
 
-        <input type="submit" value="Gönder">
-      </form>
-    </section>
-  </div>
-  <footer>
-    &copy; 2025 Hakan Gürel. Tüm hakları saklıdır.
-  </footer>
-</body>
+        <section id="contact">
+            <h2>İletişim</h2>
+            <p>Telefon: <a href="tel:+905321701686">+90 532 170 16 86</a><br>
+            E-posta: <a href="mailto:hakangurel@remaxaqua.com">hakangurel@remaxaqua.com</a><br>
+            <a href="https://wa.me/905321701686" target="_blank">WhatsApp ile İletişime Geç</a></p>
+            <p>Instagram: 
+                <a href="https://instagram.com/aquaremax">@aquaremax</a>, 
+                <a href="https://instagram.com/hakangurelremax">@hakangurelremax</a>, 
+                <a href="https://instagram.com/arsaavcısı">@arsaavcısı</a>, 
+                <a href="https://instagram.com/antalyakentseldönüşüm">@antalyakentseldönüşüm</a>, 
+                <a href="https://instagram.com/antalyasatılıkdaire">@antalyasatılıkdaire</a>, 
+                <a href="https://instagram.com/hakangurel07">@hakangurel07</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Hakan Gürel | Tüm hakları saklıdır.</p>
+        </footer>
+    </body>
 </html>
